@@ -1,0 +1,14 @@
+int potPin = 0; //must be analog pin
+
+void setup()
+{
+    Serial.begin(9600);
+    pinMode(potPin,INPUT);
+}
+
+void loop()
+{
+    int reading = analogRead(potPin);
+    Serial.println(reading);
+    delay(500);
+}
